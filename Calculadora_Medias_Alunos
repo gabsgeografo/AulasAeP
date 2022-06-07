@@ -22,8 +22,8 @@ main()
   printf("nota 1: "); scanf("%f", &nota1[i]);
   printf("nota 2: "); scanf("%f", &nota2[i]);
   printf("nota 3: "); scanf("%f", &nota3[i]);
-  printf("nota 4: "); scanf("%f", &nota4[i]*2);
-  media[i] = (nota1[i] + nota2[i] + nota3[i] + 2* nota4[i])/5.0;
+  printf("nota 4: "); scanf("%f", &nota4 2*[i]);
+  media[i] = (nota1[i] + nota2[i] + nota3[i] + 2*nota4[i])/5.0;
 }
 
   printf("\nImpressao dos codigos, media e condicao: \n");
@@ -32,7 +32,7 @@ main()
   
 {
   printf("\n%d %2.2f %2.2f %2.2f %2.2f",
-  codigo[i], nota1[i], nota2[i], nota3[i], media[i]);
+  codigo[i], nota1[i], nota2[i], nota3[i], nota4[i], media[i]);
     if (media[i]>=6)
   printf("Parabéns, você está aprovado(a)");
     else
