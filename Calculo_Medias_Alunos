@@ -1,0 +1,34 @@
+#include <stdio.h>
+//Cálculo das Médias de 150 (cento e cinquenta) alunos de um curso
+
+main()
+{
+  int i,ult;
+  float notas[150], media=0.0;
+  i = 0;
+  while (i<150)
+{
+
+printf ("Entre com a nota %d: ", i+1);
+  scanf ("%f", &notas[i]);
+  if (notas[i] < 0)
+{
+
+  ult = i;
+  break;
+}
+
+media = media + notas[i];
+  i++;
+}
+
+printf ("\nMedia= %f \n", media/ult);
+  i = 0;
+  while (i<ult)
+{
+
+printf ("\n Nota do aluno %d= ", i+1);
+printf ("%f \n", notas[i]);
+i++;
+}
+}
