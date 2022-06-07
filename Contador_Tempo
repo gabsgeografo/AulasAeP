@@ -1,0 +1,24 @@
+#include <stdio.h>
+//exercício 2 - contador de tempo (em seg)
+
+//exercício escrito em C
+
+//será necessário incluir a biblioteca - #include <time.h>
+
+#include <time.h>
+
+main()
+{
+  int t, contador = 0;
+  printf ("Nro. de segundos desde 01/Jan/1970 eh %d\n",t=time(0));
+  while (contador++ < 100000)
+{
+  //noop gotoxy(5,5); 
+  printf("%d",contador);
+}
+
+printf ("\n\nVoce esperou o tempo: %d segundos", time(0) - t);
+
+printf ("\n\nPara o computador contar de 0 ateh %d", contador-1);
+
+}
