@@ -1,0 +1,30 @@
+//jogo de advinhação 
+//Qual o número?
+//Comando escrito em linguagem C
+
+#include <stdio.h>
+//while aninhado (laços dentro de laços)
+
+main()
+{
+int num, vezes;
+char continua = 's';
+while (continua == 's' || continua == 'S')
+{
+printf ("\n\n Digite um numero entre 1 e 1000: ");
+scanf (" %d", &num);
+vezes = 1;
+while (num != 50)
+{
+
+printf ("\n %d incorreto.", num);
+printf("\n Tente novamente");
+printf ("\n\n Digite um numero entre 1 e 1000: ");
+scanf ("%d", &num);
+vezes++;
+}
+printf ("\n Voce acertou em %d tentativa(s)", vezes);
+printf ("\n Joga novamente? (s/n):");
+continua;
+}
+}
