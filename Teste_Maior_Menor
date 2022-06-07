@@ -1,0 +1,28 @@
+//Utilizando a linguagem C, escreva um algoritmo para a contagem de números em um vetor
+
+#include <stdio.h>
+
+#define TAM 1000
+main ()
+{
+  int vetor[TAM];
+  int cont, tamanho, menor, maior;
+
+printf("\nDigite o numero de elementos do vetor (max=%d): ",TAM);
+  scanf("%d", &tamanho);
+printf("\nDigite os elementos do vetor: \n");
+  for (cont=0; cont<tamanho; cont++)
+scanf("%d",&vetor[cont]);
+
+menor = vetor[0];
+maior = vetor[0];
+  for (cont=1; cont<tamanho; cont++) {
+  if(vetor[cont]<menor)
+menor=vetor[cont];
+  if(vetor[cont]>maior)
+maior=vetor[cont];
+}
+
+printf("\nMenor elemento= %d", menor);
+printf("\nMaior elemento =%d", maior);
+}
