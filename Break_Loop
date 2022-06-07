@@ -1,0 +1,15 @@
+#include <stdio.h>
+//break - forçar a parada do loop
+
+main()
+{
+  int num;
+  while (1)
+{
+
+printf ( "\n Digite um numero: ");
+  scanf ("%d", &num);
+printf (" 2 * %d = %d", num, 2 * num);
+  break;
+}
+}
